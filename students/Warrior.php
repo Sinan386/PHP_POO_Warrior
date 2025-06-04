@@ -11,6 +11,8 @@ abstract class Warrior extends LocalWarrior {
     public int $shield;
     public string $imageUrl;
 
+    public ?Weapon $weapon;
+
      public function __construct(string $warriorName) {
 
         $this->name = $warriorName;
