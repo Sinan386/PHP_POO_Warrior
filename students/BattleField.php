@@ -6,4 +6,7 @@ require_once "Warrior.php";
 
 class BattleField extends BaseBattleField
 {
+    public static function createMyWarrior() {
+        
+    }
 }
