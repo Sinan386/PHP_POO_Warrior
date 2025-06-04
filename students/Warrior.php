@@ -11,7 +11,12 @@ abstract class Warrior extends LocalWarrior {
     public int $shield;
     public string $imageUrl;
 
-     public function __construct() {
+     public function __construct(string $warriorName) {
+
+        $this->name = $warriorName;
+        $this->speed = 30;
+        $this->life = 100;
+        $this->shield = 20;
         
     }
   
