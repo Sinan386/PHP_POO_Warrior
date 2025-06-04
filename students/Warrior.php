@@ -2,7 +2,7 @@
 
 require_once __DIR__ . "/../base/LocalWarrior.php";
 
-$GLOBALS['warriorName'] = 'SuperFort';
+$GLOBALS['warriorName'] = 'pikachu';
 
 abstract class Warrior extends LocalWarrior {
     public string $name;
