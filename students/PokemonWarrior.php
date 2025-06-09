@@ -5,6 +5,9 @@ class PokemonWarrior extends Warrior
 {  
     public int $level;
 
-    // TODO : attributs et méthodes spécifiques plus tard
+    public function getPower(): int
+    {
+        return $this->level;
+    }
 }
 ?>
