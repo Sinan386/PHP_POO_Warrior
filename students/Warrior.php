@@ -14,7 +14,7 @@ abstract class Warrior extends LocalWarrior {
     public int $shield;
     public string $imageUrl;
 
-    
+    public ?Weapon $weapon = null; 
 
     
 
