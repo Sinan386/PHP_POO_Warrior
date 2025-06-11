@@ -1,22 +1,23 @@
 <?php
-require_once __DIR__ . '/Warrior.php';
 
-class MarvelWarrior extends Warrior
-{
-      public int $superPower;
+class MarvelWarrior extends Warrior { // 3°/ MarvelWarrior héritié de Warrior
+    public int $superPower; // 5°/ Attribut
 
-        public function __construct(string $name) {
-        parent::__construct($name);       
-        $this->superPower = 100;          
-    }
-
-
-
-      
-    public function getPower(): int
-    {
-        return $this->superPower;
-    }
-    
+    public function getPower() : int {  // 6°/ Methode
+    return $this->superPower;
 }
+    public function __construct(string $name) {
+        parent::__construct($name);
+        $this->superPower= 100;
+ }        
+
+    }
+
+
+
+
+
+
+
+
 ?>

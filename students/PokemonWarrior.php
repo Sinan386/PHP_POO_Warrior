@@ -1,20 +1,31 @@
 <?php
-require_once __DIR__ . '/Warrior.php';
 
-class PokemonWarrior extends Warrior
-{  
-    public int $level;
+class PokemonWarrior extends Warrior { // 3°/ PokemonWarrior héritié de Warrior
+    public int $level; // 5°/ Attribut
+    private string $type;
+   
 
-
-        public function __construct(string $name) {
-        parent::__construct($name);       
-        $this->level = 1;          
-    }
+    
 
 
-    public function getPower(): int
-    {
-        return $this->level;
-    }
+    public function getPower() : int { // 6°/ Methode
+    return $this->level;
 }
+    public function __construct(string $name,?string $type=null) { // Je peux mettre un type de pokemon obligatoire où null
+        parent::__construct($name);
+        $this->level= 1;
+        $this->type= $type;
+ }
+    }
+    
+
+
+
+
+
+
+
+
+
+
 ?>
